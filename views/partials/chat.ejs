@@ -1,13 +1,13 @@
-<div class="jumbotron m-5 div1">
-    <h1>Chat de constultas</h1>
-    <br>
-    <form action="" class="consulta" onsubmit="return sendMensaje(this)">
-        <input type="text" name="email" id="autor" placeholder="Email" class="comp">
-        <input type="text" name="consulta" id="texto" placeholder="Motivo de la consulta" class="comp">
-        <button class="btn btn-info comp">Enviar</button>
-    </form>
-    <hr>
-    <div id="message" class=" mt-4 bgBox">
+<div class="container">
+    <h1>Chat de consulta</h1>
+    <form class="form" onsubmit=" return addMessage(this)">
+        <div class="input-group mb-3">
+            <input type="text" id="author" class="form-control" placeholder="Nombre">
+            <input type="text" id="text" class="form-control" placeholder="Mensaaje">
 
+            <button class="btn btn-outline-secondary sendMensaje" type="submit" id="button-addon2">Enviar</button>
+        </div>
+    </form>
+    <div id="message" class=" mt-4 bgBox">
     </div>
 </div>
