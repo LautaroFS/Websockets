@@ -15,7 +15,7 @@ app.set('view engine', 'ejs')
 
 const products = []
 const messages = [{
-    author: 'Lautaro', text: 'Hola'
+    author: 'Robot', text: 'Hola deja tu consulta y te la contestaremos.'
 }]
 
 io.on('connection', socket => {
