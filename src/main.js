@@ -27,7 +27,7 @@ io.on('connection', socket => {
     })
 })
 
-app.get('/', (req, res) => {
+app.get('/productos', (req, res) => {
     res.render('stock', { products })
 })
 
@@ -35,9 +35,9 @@ app.get('/cargaProd', (req, res) => {
     res.render('inicio', { products })
 })
 
-app.post('/', (req, res) => {
+app.post('/productos', (req, res) => {
     products.push(req.body)
-    res.redirect('/')
+    res.redirect('/productos')
 })
 
 httpServer.listen(PORT, () => {
